@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MBA Programs - Karnataka University Dharwad</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <h1 class="logo">Karnataka University</h1>
+                    <p class="affiliation">MBA Programs | NAAC A+ Accredited</p>
+                </div>
+                <nav class="nav">
+                    <button class="nav-toggle" aria-label="Toggle navigation">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <ul class="nav-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#programs">Programs</a></li>
+                        <li><a href="#faculty">Faculty</a></li>
+                        <li><a href="#campus">Campus Life</a></li>
+                        <li><a href="#admissions">Admissions</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Carousel -->
+        <section id="home" class="hero-carousel">
+            <div class="carousel-container">
+                <div class="carousel-slides">
+                    <div class="slide active">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/v1748811643/pplx_project_search_images/a6793494d0e243abb2f1cf8c6ca47ca2d000855c.jpg" alt="Modern campus building">
+                        <div class="slide-content">
+                            <h2>Transform Your Career with MBA</h2>
+                            <p>Join Karnataka University Dharwad's prestigious MBA program</p>
+                            <button class="btn btn--primary">Apply Now</button>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/v1753186751/pplx_project_search_images/e241bba30f8c2a20f0e194e0b3be9288738021e9.jpg" alt="MBA graduates celebrating">
+                        <div class="slide-content">
+                            <h2>Success Stories Begin Here</h2>
+                            <p>Join our alumni network of successful professionals</p>
+                            <button class="btn btn--primary">View Success Stories</button>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="https://pplx-res.cloudinary.com/image/upload/v1753190536/pplx_project_search_images/85e58a237f3fae7a0ae448438bea8e4f4e5f72ec.jpg" alt="Students studying together">
+                        <div class="slide-content">
+                            <h2>Collaborative Learning Environment</h2>
+                            <p>Learn with diverse peers in our modern facilities</p>
+                            <button class="btn btn--primary">Book Campus Visit</button>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn carousel-btn--prev" aria-label="Previous slide">‹</button>
+                <button class="carousel-btn carousel-btn--next" aria-label="Next slide">›</button>
+                <div class="carousel-indicators">
+                    <button class="indicator active" data-slide="0"></button>
+                    <button class="indicator" data-slide="1"></button>
+                    <button class="indicator" data-slide="2"></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- MBA Specialization Quiz -->
+        <section class="quiz-section">
+            <div class="container">
+                <div class="quiz-container">
+                    <h2 class="quiz-title">Find Your MBA Specialization</h2>
+                    <div class="quiz-content">
+                        <div class="question-container">
+                            <div class="question-header">
+                                <span class="question-counter">Question <span id="currentQuestion">1</span> of <span id="totalQuestions">5</span></span>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" id="progressFill"></div>
+                                </div>
+                            </div>
+                            <h3 class="question-text" id="questionText">What type of work environment excites you most?</h3>
+                            <div class="options-container" id="optionsContainer">
+                                <!-- Options will be populated by JavaScript -->
+                            </div>
+                            <div class="quiz-navigation">
+                                <button class="btn btn--secondary" id="prevBtn" disabled>Previous</button>
+                                <button class="btn btn--primary" id="nextBtn" disabled>Next</button>
+                            </div>
+                        </div>
+                        <div class="quiz-result hidden" id="quizResult">
+                            <h3>Your Recommended Specialization:</h3>
+                            <div class="result-card">
+                                <h4 id="resultTitle"></h4>
+                                <p id="resultDescription"></p>
+                                <div class="career-paths">
+                                    <h5>Career Opportunities:</h5>
+                                    <ul id="careerList"></ul>
+                                </div>
+                                <button class="btn btn--primary" onclick="window.location.href='#programs'">Explore Programs</button>
+                                <button class="btn btn--secondary" id="retakeQuiz">Retake Quiz</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Programs Carousel -->
+        <section id="programs" class="programs-section">
+            <div class="container">
+                <h2>MBA Specializations</h2>
+                <div class="programs-carousel">
+                    <div class="programs-container">
+                        <div class="program-slide">
+                            <div class="program-card">
+                                <h3>Finance & Banking</h3>
+                                <p class="duration">2 Years</p>
+                                <p>Comprehensive program covering investment banking, risk management, and corporate finance</p>
+                                <div class="career-paths-preview">
+                                    <strong>Career Paths:</strong>
+                                    <span>Investment Banker, Risk Manager, Financial Analyst</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="program-slide">
+                            <div class="program-card">
+                                <h3>Marketing & Sales</h3>
+                                <p class="duration">2 Years</p>
+                                <p>Focus on digital marketing, consumer behavior, and brand management</p>
+                                <div class="career-paths-preview">
+                                    <strong>Career Paths:</strong>
+                                    <span>Marketing Manager, Brand Strategist, Product Manager</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="program-slide">
+                            <div class="program-card">
+                                <h3>Human Resources</h3>
+                                <p class="duration">2 Years</p>
+                                <p>Talent management, organizational development, and workforce planning</p>
+                                <div class="career-paths-preview">
+                                    <strong>Career Paths:</strong>
+                                    <span>HR Manager, Talent Acquisition Specialist</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="program-slide">
+                            <div class="program-card">
+                                <h3>Operations & Supply Chain</h3>
+                                <p class="duration">2 Years</p>
+                                <p>Supply chain management, process optimization, and quality control</p>
+                                <div class="career-paths-preview">
+                                    <strong>Career Paths:</strong>
+                                    <span>Operations Manager, Supply Chain Analyst</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="program-slide">
+                            <div class="program-card">
+                                <h3>Digital Marketing & Analytics</h3>
+                                <p class="duration">2 Years</p>
+                                <p>Data-driven marketing, analytics, and digital transformation</p>
+                                <div class="career-paths-preview">
+                                    <strong>Career Paths:</strong>
+                                    <span>Data Analyst, Digital Marketing Manager</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="program-slide">
+                            <div class="program-card">
+                                <h3>International Business</h3>
+                                <p class="duration">2 Years</p>
+                                <p>Global business practices, international trade, and cross-cultural management</p>
+                                <div class="career-paths-preview">
+                                    <strong>Career Paths:</strong>
+                                    <span>International Business Manager, Export Manager</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-btn carousel-btn--prev" id="programsPrev">‹</button>
+                    <button class="carousel-btn carousel-btn--next" id="programsNext">›</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Faculty Carousel -->
+        <section id="faculty" class="faculty-section">
+            <div class="container">
+                <h2>Meet Our Faculty</h2>
+                <div class="faculty-carousel">
+                    <div class="faculty-container">
+                        <div class="faculty-slide">
+                            <div class="faculty-card">
+                                <div class="faculty-info">
+                                    <h3>Dr. Rajesh Kumar</h3>
+                                    <p class="designation">Professor & Head - Finance</p>
+                                    <p class="qualifications">Ph.D. Finance, IIM Bangalore</p>
+                                    <p class="experience">15 years experience</p>
+                                    <p class="specialization">Corporate Finance, Investment Banking</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faculty-slide">
+                            <div class="faculty-card">
+                                <div class="faculty-info">
+                                    <h3>Dr. Priya Sharma</h3>
+                                    <p class="designation">Associate Professor - Marketing</p>
+                                    <p class="qualifications">Ph.D. Marketing, ISB Hyderabad</p>
+                                    <p class="experience">12 years experience</p>
+                                    <p class="specialization">Digital Marketing, Consumer Behavior</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faculty-slide">
+                            <div class="faculty-card">
+                                <div class="faculty-info">
+                                    <h3>Dr. Amit Patel</h3>
+                                    <p class="designation">Professor - Operations</p>
+                                    <p class="qualifications">Ph.D. Operations, IIT Delhi</p>
+                                    <p class="experience">18 years experience</p>
+                                    <p class="specialization">Supply Chain, Quality Management</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="faculty-slide">
+                            <div class="faculty-card">
+                                <div class="faculty-info">
+                                    <h3>Dr. Sunita Rao</h3>
+                                    <p class="designation">Associate Professor - HR</p>
+                                    <p class="qualifications">Ph.D. HRM, XLRI Jamshedpur</p>
+                                    <p class="experience">10 years experience</p>
+                                    <p class="specialization">Organizational Behavior, Talent Management</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-btn carousel-btn--prev" id="facultyPrev">‹</button>
+                    <button class="carousel-btn carousel-btn--next" id="facultyNext">›</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Campus Life Carousel -->
+        <section id="campus" class="campus-section">
+            <div class="container">
+                <h2>Campus Life</h2>
+                <div class="campus-carousel">
+                    <div class="campus-container">
+                        <div class="campus-slide">
+                            <img src="https://pplx-res.cloudinary.com/image/upload/v1753190537/pplx_project_search_images/3f5758ec4ce18882e9652d20d21722715473369f.jpg" alt="Students in library">
+                            <div class="campus-info">
+                                <h3>Modern Library Facilities</h3>
+                                <p>State-of-the-art library with digital resources and study spaces</p>
+                            </div>
+                        </div>
+                        <div class="campus-slide">
+                            <img src="https://pplx-res.cloudinary.com/image/upload/v1753190536/pplx_project_search_images/6bf0d8edf92b1058f4288d2b44d6096c28808781.jpg" alt="Classroom interaction">
+                            <div class="campus-info">
+                                <h3>Interactive Classrooms</h3>
+                                <p>Modern lecture halls equipped with latest technology</p>
+                            </div>
+                        </div>
+                        <div class="campus-slide">
+                            <img src="https://pplx-res.cloudinary.com/image/upload/v1753190536/pplx_project_search_images/1009dce80e75200cc74bd44f6384cf63ecc60988.jpg" alt="Group learning">
+                            <div class="campus-info">
+                                <h3>Collaborative Learning</h3>
+                                <p>Group study areas promoting peer-to-peer learning</p>
+                            </div>
+                        </div>
+                        <div class="campus-slide">
+                            <img src="https://pplx-res.cloudinary.com/image/upload/v1753190537/pplx_project_search_images/07633d4fb4a9f92cd006ed863fdf3767470adfec.jpg" alt="Diverse study environment">
+                            <div class="campus-info">
+                                <h3>Diverse Community</h3>
+                                <p>Students from various backgrounds creating a rich learning environment</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-btn carousel-btn--prev" id="campusPrev">‹</button>
+                    <button class="carousel-btn carousel-btn--next" id="campusNext">›</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Student Success Stories -->
+        <section class="success-stories">
+            <div class="container">
+                <h2>Student Success Stories</h2>
+                <div class="stories-grid">
+                    <div class="story-card">
+                        <h3>Arjun Reddy</h3>
+                        <p class="position">Senior Financial Analyst, HDFC Bank</p>
+                        <p class="story-text">The finance program equipped me with practical skills in risk management and investment analysis.</p>
+                        <span class="year">Class of 2023</span>
+                    </div>
+                    <div class="story-card">
+                        <h3>Kavya Menon</h3>
+                        <p class="position">Marketing Manager, Infosys</p>
+                        <p class="story-text">The digital marketing specialization helped me land my dream job in tech marketing at a leading MNC.</p>
+                        <span class="year">Class of 2022</span>
+                    </div>
+                    <div class="story-card">
+                        <h3>Rohit Singh</h3>
+                        <p class="position">Operations Head, TCS</p>
+                        <p class="story-text">The operations program taught me supply chain optimization techniques I use daily in my leadership role.</p>
+                        <span class="year">Class of 2023</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Polling System -->
+        <section class="polling-section">
+            <div class="container">
+                <div class="poll-container">
+                    <h2>What matters most in your MBA journey?</h2>
+                    <div class="poll-options" id="pollOptions">
+                        <!-- Poll options will be populated by JavaScript -->
+                    </div>
+                    <div class="poll-results" id="pollResults">
+                        <h3>Current Results:</h3>
+                        <div class="results-list" id="resultsList">
+                            <!-- Results will be populated by JavaScript -->
+                        </div>
+                        <p class="total-votes">Total votes: <span id="totalVotes">0</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recruiting Partners -->
+        <section class="partners-section">
+            <div class="container">
+                <h2>Our Recruiting Partners</h2>
+                <div class="partners-scroll">
+                    <div class="partners-track" id="partnersTrack">
+                        <div class="partner">Infosys</div>
+                        <div class="partner">TCS</div>
+                        <div class="partner">HDFC Bank</div>
+                        <div class="partner">ICICI Bank</div>
+                        <div class="partner">Wipro</div>
+                        <div class="partner">Amazon</div>
+                        <div class="partner">Deloitte</div>
+                        <div class="partner">PwC</div>
+                        <div class="partner">EY</div>
+                        <div class="partner">KPMG</div>
+                        <div class="partner">Accenture</div>
+                        <div class="partner">IBM</div>
+                        <div class="partner">Microsoft</div>
+                        <div class="partner">Google</div>
+                        <div class="partner">Flipkart</div>
+                        <div class="partner">Paytm</div>
+                        <div class="partner">Zomato</div>
+                        <div class="partner">Mahindra</div>
+                        <div class="partner">Tata Group</div>
+                        <div class="partner">Reliance</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2>Get in Touch</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Karnataka University Dharwad</h3>
+                        <div class="info-item">
+                            <strong>Address:</strong>
+                            <p>Pavate Nagar, Dharwad, Karnataka 580003, India</p>
+                        </div>
+                        <div class="info-item">
+                            <strong>Phone:</strong>
+                            <p>+91 836 2779531</p>
+                        </div>
+                        <div class="info-item">
+                            <strong>Email:</strong>
+                            <p>mba@kud.ac.in</p>
+                        </div>
+                        <div class="info-item">
+                            <strong>Established:</strong>
+                            <p>1949 | NAAC A+ Accredited</p>
+                        </div>
+                    </div>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label class="form-label" for="name">Full Name</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="email">Email Address</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="phone">Phone Number</label>
+                            <input type="tel" id="phone" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="program">Program Interest</label>
+                            <select id="program" class="form-control" required>
+                                <option value="">Select a program</option>
+                                <option value="finance">Finance & Banking</option>
+                                <option value="marketing">Marketing & Sales</option>
+                                <option value="hr">Human Resources</option>
+                                <option value="operations">Operations & Supply Chain</option>
+                                <option value="digital">Digital Marketing & Analytics</option>
+                                <option value="international">International Business</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="message">Message</label>
+                            <textarea id="message" class="form-control" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--full-width">Submit Application</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Karnataka University Dharwad</h4>
+                    <p>Transforming careers through quality MBA education since 1949</p>
+                </div>
+                <div class="footer-section">
+                    <h5>Quick Links</h5>
+                    <ul>
+                        <li><a href="#programs">Programs</a></li>
+                        <li><a href="#faculty">Faculty</a></li>
+                        <li><a href="#admissions">Admissions</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h5>Contact Info</h5>
+                    <p>Pavate Nagar, Dharwad<br>Karnataka 580003, India<br>+91 836 2779531</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Karnataka University Dharwad. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
